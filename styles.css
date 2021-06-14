@@ -49,6 +49,8 @@ p{
   padding: 10px;
   font-family: 'Inconsolata', monospace;
   cursor: pointer;
+  background-color: white;
+  color: black;
 }
 
 .destiny:hover{
