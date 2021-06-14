@@ -17,12 +17,15 @@ body {
 }
 
 h1{
-  font-size: 40px;
+  font-size: 60px;
+  text-align: center;
 }
 
 p{
-  font-size: 20px;
+  font-size: 40px;
   margin-top: 10px;
+  background: black;
+  text-align: center;
 }
 
 .title {
@@ -38,6 +41,7 @@ p{
 .form{
   font-family: 'Inconsolata', monospace;
   color: white;
+  transform: scale(2);
 }
 
 .destiny{
@@ -54,11 +58,13 @@ p{
 
 .input-button{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px 0 10px;
   width: 450px;
+  font-size: 20px;
+  margin-top: 30px;
 }
 
 .positive-message{
