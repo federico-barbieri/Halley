@@ -21,9 +21,13 @@ h1{
   text-align: center;
 }
 
+h2{
+  font-size: 50px;
+}
+
 p{
   font-size: 40px;
-  margin-top: 10px;
+  margin-top: 30px;
   background: black;
   text-align: center;
 }
@@ -42,6 +46,10 @@ p{
   font-family: 'Inconsolata', monospace;
   color: white;
   transform: scale(2);
+}
+
+.how-old {
+  margin-top: 45px;
 }
 
 .destiny{
