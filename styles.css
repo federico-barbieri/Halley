@@ -107,8 +107,8 @@ p{
 
 .try-again {
   border-radius: 30px;
-  font-size: 20px;
-  padding: 12px;
+  font-size: 40px;
+  padding: 15px;
   font-family: 'Inconsolata', monospace;
   cursor: pointer;
   transform: translateY(300px);
