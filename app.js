@@ -21,7 +21,7 @@ destinyBtn.addEventListener('click', () => {
 
   if (humanLifespan - userAge + currentYear >= 2061){
 
-    positiveMsg.style.display = "flex";
+    positiveMsg.style.display = "inline";
     tryAgainBtn.style.display = "inline";
     userAnswer.style.display = "none";
     howOld.style.display = "none";
@@ -30,7 +30,7 @@ destinyBtn.addEventListener('click', () => {
     userAnswer.style.display = "none";
     howOld.style.display = "none";
     destinyBtn.style.display = "none";
-    negativeMsg.style.display = "flex";
+    negativeMsg.style.display = "inline";
     tryAgainBtn.style.display = "inline";
   }
 
