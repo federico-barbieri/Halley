@@ -25,13 +25,13 @@ body {
 }
 
 .main-title{
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 .title-p{
-  font-size: 40px;
-  margin-top: 30px;
+  font-size: 3rem;
+  margin-top: 2rem;
   background: black;
   text-align: center;
 }
@@ -51,11 +51,16 @@ body {
 .form{
   font-family: 'Inconsolata', monospace;
   color: white;
-  transform: scale(2);
+  transform: scale(4);
+  margin: 3rem auto 2rem auto;
 }
 
 .how-old {
   margin-top: 2.2rem;
+}
+
+#age-input{
+  margin: 0 auto 0.5rem auto;
 }
 
 .destiny{

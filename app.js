@@ -13,6 +13,8 @@ const humanLifespan = 79;
 
 let currentYear = 2021;
 
+document.getElementById("age-input").blur();
+
 const positiveMsg = document.querySelector('.positive-message');
 const negativeMsg = document.querySelector('.negative-message');
 
@@ -45,7 +47,4 @@ tryAgainBtn.addEventListener('click', () => {
   destinyBtn.style.display = "inline";
   userAge = '';
   userAnswer.value = '';
-
-
-
 })
