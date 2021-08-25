@@ -11,6 +11,7 @@ html{
 body {
   background-image: url('img/halley-background.jpeg');
   background-size: cover;
+  overflow: hidden;
 }
 
 .container{
@@ -30,7 +31,7 @@ body {
 }
 
 .title-p{
-  font-size: 3rem;
+  font-size: 2rem;
   margin-top: 2rem;
   background: black;
   text-align: center;
@@ -39,7 +40,7 @@ body {
 .main-titles {
   display: flex;
   flex-direction: column;
-  min-height: 30vh;
+  min-height: 10vh;
   justify-content: center;
   align-items: center;
   font-family: 'Inconsolata', monospace;
@@ -51,12 +52,13 @@ body {
 .form{
   font-family: 'Inconsolata', monospace;
   color: white;
-  transform: scale(4);
+  transform: scale(2);
   margin: 3rem auto 2rem auto;
 }
 
 .how-old {
-  margin-top: 2.2rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 #age-input{
@@ -140,4 +142,138 @@ h2{
 .try-again:hover{
   color: white;
   background-color: black;
+}
+
+@media only screen and (max-width: 1388px){
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    min-height: 100%;
+    margin: 1rem auto 3rem auto;
+
+  }
+
+  .main-title{
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .title-p{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    background: black;
+    text-align: center;
+  }
+
+  .main-titles {
+    display: flex;
+    flex-direction: column;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    max-width: 80%;
+    margin: 3rem auto 1rem auto;
+  }
+
+  .form{
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    transform: scale(1.5);
+    margin: 3rem auto 2rem auto;
+  }
+
+  .how-old {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #age-input{
+    margin: 0 auto 0.5rem auto;
+  }
+
+  .destiny{
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Inconsolata', monospace;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+  }
+
+  .destiny:hover{
+    color: white;
+    background-color: black;
+  }
+
+  .input-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem 0 1rem;
+    width: 450px;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .positive-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    transform: translateY(180px);
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+
+  }
+
+  .negative-message{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    transform: translateY(180px);
+    color: white;
+    font-size: 1.5rem;
+    display: none;
+  }
+
+  h2{
+    font-size: 2.2rem;
+  }
+
+  .sadly-p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 1rem auto 1rem auto;
+  }
+
+
+  .try-again {
+    border-radius: 30px;
+    font-size: 2rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    font-family: 'Inconsolata', monospace;
+    cursor: pointer;
+    transform: translateY(120px);
+    display: none;
+    margin: 2rem auto 2rem auto;
+  }
+
+  .try-again:hover{
+    color: white;
+    background-color: black;
+  }
+
 }
