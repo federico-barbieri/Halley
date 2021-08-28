@@ -9,9 +9,9 @@ html{
 }
 
 body {
-  background-image: url('img/halley-background.jpeg');
+  background-image: url('img/comet-large.jpg');
   background-size: cover;
-  overflow: hidden;
+
 }
 
 .container{
@@ -20,8 +20,8 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 90%;
-  min-height: 100%;
-  margin: 1rem auto 5rem auto;
+  height: 40rem;
+  margin: 1rem auto 0 auto;
 
 }
 
@@ -52,7 +52,7 @@ body {
 .form{
   font-family: 'Inconsolata', monospace;
   color: white;
-  transform: scale(2);
+  transform: scale(2.5);
   margin: 3rem auto 2rem auto;
 }
 
@@ -152,18 +152,18 @@ h2{
     justify-content: center;
     align-items: center;
     max-width: 90%;
-    min-height: 100%;
-    margin: 1rem auto 3rem auto;
+    min-height: 50rem;
+    margin: 1rem auto 0 auto;
 
   }
 
   .main-title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     text-align: center;
   }
 
   .title-p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 1.5rem;
     background: black;
     text-align: center;
@@ -178,14 +178,14 @@ h2{
     font-family: 'Inconsolata', monospace;
     color: white;
     max-width: 80%;
-    margin: 3rem auto 1rem auto;
+    margin: 1rem auto 1rem auto;
   }
 
   .form{
     font-family: 'Inconsolata', monospace;
     color: white;
-    transform: scale(1.5);
-    margin: 3rem auto 2rem auto;
+    transform: scale(2);
+    margin: 2rem auto 2rem auto;
   }
 
   .how-old {
