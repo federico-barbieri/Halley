@@ -11,25 +11,30 @@
 
     <title>Halley's Comet</title>
   </head>
-  <body>
+  <body id="body">
 
 
 
 <section class="container">
 
+  <div class="general">
+    <h1 class="main-title">Will you live long enough to..</h1>
+    <button class="randomEventBtn" type="button" name="button">?</button>
+  </div>
 
-    <section class="main-titles">
-      <h1 class="main-title">Will you live long enough <br>to see Halley's Comet?</h1>
-      <p class="title-p">Find out if you'll experience this once-every-76-years space wonder.</p>
-    </section>
+  <div class="halleyMainTexts">
+    <h1 class="halleyH1">.. see Halley's Comet fly around Earth?</h1>
 
-    <form class="form" action="index.html" method="post">
+    <p class="title-p">Find out if you'll experience this once-every-76-years space wonder.</p>
+  </div>
+
+    <form class="halleyform" action="index.html" method="post">
 
       <div class="input-button">
 
 
         <label class="how-old" for="">How old are you?</label><br>
-        <input id="age-input" class="userInput" type="text" name="" value=""><br>
+        <input id="age-input" class="userInput" type="text" name="age" value="" required><br>
         <button class="destiny" type="button" name="button">Reveal my destiny</button>
 
        </div>
