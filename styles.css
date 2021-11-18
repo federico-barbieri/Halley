@@ -192,7 +192,7 @@ h2{
     background-color: black;
   }
 
-@media (max-width:1000px){
+@media (max-width:1500px){
   body{
     background: url('img/general/dice-vertical.jpg');
     background-position: center;
