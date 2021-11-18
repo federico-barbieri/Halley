@@ -47,6 +47,9 @@ body {
   font-family: 'Inconsolata', monospace;
   font-size: 2rem;
   margin: 3rem auto 0 auto;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
 }
 
 .randomEventBtn:hover{
@@ -307,6 +310,7 @@ h2{
 
 @media (max-width:1000px){
   body{
+    background: url('img/general/dice-vertical.jpg');
     background-position: center;
   }
 }
