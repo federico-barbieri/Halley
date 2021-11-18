@@ -1,4 +1,6 @@
 
+const titleP = document.querySelector('.title-p');
+
 const destinyBtn = document.querySelector('.destiny');
 
 const tryAgainBtn = document.querySelector('.try-again');
@@ -18,7 +20,8 @@ document.getElementById("age-input").blur();
 const positiveMsg = document.querySelector('.positive-message');
 const negativeMsg = document.querySelector('.negative-message');
 
-destinyBtn.addEventListener('click', () => {
+destinyBtn.addEventListener('click', (e) => {
+  event.preventDefault();
   userAge+= userAnswer.value;
 
   if (humanLifespan - userAge + currentYear >= 2061){
@@ -28,12 +31,14 @@ destinyBtn.addEventListener('click', () => {
     userAnswer.style.display = "none";
     howOld.style.display = "none";
     destinyBtn.style.display = "none";
+    titleP.style.display = "none";
   } else {
     userAnswer.style.display = "none";
     howOld.style.display = "none";
     destinyBtn.style.display = "none";
     negativeMsg.style.display = "inline";
     tryAgainBtn.style.display = "inline";
+    titleP.style.display = "none";
   }
 
 })
@@ -45,6 +50,7 @@ tryAgainBtn.addEventListener('click', () => {
   userAnswer.style.display = "inline";
   howOld.style.display = "inline";
   destinyBtn.style.display = "inline";
+  titleP.style.display = "inline";
   userAge = '';
   userAnswer.value = '';
 })
