@@ -71,6 +71,7 @@ tryAgainBtn.addEventListener('click', () => {
 
   general.style.display = "flex";
   document.body.style.background = 'url("img/general/dice.jpg")';
+  document.body.style.backgroundPosition = "center";
 })
 
 // FUTURE EVENTS
