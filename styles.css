@@ -127,30 +127,6 @@ body {
   margin-top: 30px;
 }
 
-.positive-message{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inconsolata', monospace;
-  position: absolute;
-  color: white;
-  font-size: 1.5rem;
-  display: none;
-
-}
-
-.negative-message{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: 'Inconsolata', monospace;
-  position: absolute;
-  color: white;
-  font-size: 1.5rem;
-  display: none;
-}
 
 h2{
   font-size: 2.2rem;
@@ -162,115 +138,17 @@ h2{
   margin: 1rem auto 1rem auto;
 }
 
-
-.try-again {
-  padding: 1rem 8rem;
-  border-radius: 1rem;
-  font-family: 'Inconsolata', monospace;
-  font-size: 2rem;
-  margin: 3rem auto 0 auto;
-  border: 1px solid white;
-  color: white;
-  background-color: black;
-  display: none;
-}
-
-.try-again:hover{
-  color: white;
-  background-color: black;
-}
-
-@media(max-width: 1388px){
-
-  .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 90%;
-    min-height: 50rem;
-    margin: 1rem auto 0 auto;
-
-  }
-
-  .main-title{
-    font-size: 3.5rem;
-    text-align: center;
-  }
-
-  .title-p{
-    font-size: 2rem;
-    margin-top: 1.5rem;
-    background: black;
-    text-align: center;
-  }
-
-  .main-titles {
-    display: flex;
-    flex-direction: column;
-    min-height: 10vh;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Inconsolata', monospace;
-    color: white;
-    max-width: 80%;
-    margin: 1rem auto 1rem auto;
-  }
-
-  .form{
-    font-family: 'Inconsolata', monospace;
-    color: white;
-    transform: scale(2);
-    margin: 2rem auto 2rem auto;
-  }
-
-  .how-old {
-    margin-top: 1rem;
-    font-size: 1.5rem;
-  }
-
-  #age-input{
-    margin: 0 auto 0.5rem auto;
-  }
-
-  .destiny{
-    border-radius: 30px;
-    padding: 10px;
-    font-family: 'Inconsolata', monospace;
-    cursor: pointer;
-    background-color: white;
-    color: black;
-  }
-
-  .destiny:hover{
-    color: white;
-    background-color: black;
-  }
-
-  .input-button{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 1rem 0 1rem;
-    width: 450px;
-    font-size: 1rem;
-    margin-top: 30px;
-  }
-
-  .positive-message{
+.positive-message{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     font-family: 'Inconsolata', monospace;
-
-
     color: white;
     font-size: 1.5rem;
     display: none;
-
-  }
+    text-align: center;
+}
 
   .negative-message{
     display: flex;
@@ -281,6 +159,8 @@ h2{
     color: white;
     font-size: 1.5rem;
     display: none;
+    text-align: center;
+    margin: 1rem auto 5rem auto;
   }
 
   h2{
@@ -301,18 +181,33 @@ h2{
     font-family: 'Inconsolata', monospace;
     cursor: pointer;
     display: none;
-    margin: 0rem auto 2rem auto;
+    margin: 2rem auto 2rem auto;
+    border: 1px solid white;
+    color: white;
+    background: black;
   }
 
   .try-again:hover{
     color: white;
     background-color: black;
   }
-}
 
 @media (max-width:1000px){
   body{
     background: url('img/general/dice-vertical.jpg');
     background-position: center;
+  }
+}
+
+@media (max-width: 760px){
+  .halleyH1{
+    font-size: 2rem;
+  }
+  .title-p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .how-old{
+    font-size: 1rem;
   }
 }

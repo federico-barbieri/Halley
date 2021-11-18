@@ -51,11 +51,15 @@ destinyBtn.addEventListener('click', (e) => {
     tryAgainBtn.style.display = "inline";
     halleyForm.style.display = "none";
     halleyMainTexts.style.display = "none"
+    userAge = '';
+    userAnswer.value = '';
   } else {
     halleyForm.style.display = "none";
     negativeMsg.style.display = "inline";
     tryAgainBtn.style.display = "inline";
     halleyMainTexts.style.display = "none"
+    userAge = '';
+    userAnswer.value = '';
   }
 
 })
@@ -67,8 +71,6 @@ tryAgainBtn.addEventListener('click', () => {
 
   general.style.display = "flex";
   document.body.style.background = 'url("img/general/dice.jpg")';
-  userAge = '';
-  userAnswer.value = '';
 })
 
 // FUTURE EVENTS
