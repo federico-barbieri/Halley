@@ -74,9 +74,63 @@ tryAgainBtn.addEventListener('click', () => {
   document.body.style.backgroundPosition = "center";
 })
 
+
+// ROBOTS
+
+const robotsMainTexts = document.querySelector('.robotsMainTexts');
+const robotsH1 = document.querySelector('.robotsH1');
+const robotsP = document.querySelector('.robots-p');
+const robotsform = document.querySelector('.robotsform');
+const robotsUserAnswer = document.querySelector('.userInputRobots');
+const robotsdestinyBtn = document.querySelector('.robotsdestiny');
+const robotsPositive = document.querySelector('.positive-message-robots')
+const robotsNegative = document.querySelector('.negative-message-robots')
+const robotsTryAgain = document.querySelector('.try-again-robots');
+
+function robots () {
+  robotsMainTexts.style.display = "flex";
+  document.body.style.background  = "url(img/robots/robot1.jpg)";
+  document.body.style.backgroundPosition = "bottom";
+  robotsform.style.display = "flex";
+}
+
+robotsdestinyBtn.addEventListener('click', (e) => {
+  event.preventDefault();
+  userAge+= robotsUserAnswer.value;
+  console.log(userAge);
+  console.log(parseInt(userAge) + parseInt(currentYear));
+
+  if (parseInt(userAge) + parseInt(currentYear) > 2038){
+    robotsMainTexts.style.display = "none";
+    robotsform.style.display = "none";
+    robotsPositive.style.display = "flex";
+    robotsTryAgain.style.display = "inline";
+    userAge = '';
+    robotsUserAnswer.value = '';
+  } else {
+    robotsNegative.style.display = "flex";
+    robotsTryAgain.style.display = "inline";
+    robotsMainTexts.style.display = "none";
+    robotsform.style.display = "none";
+    userAge = '';
+    robotsUserAnswer.value = '';
+  }
+})
+
+robotsTryAgain.addEventListener('click', () => {
+  robotsTryAgain.style.display = "none";
+  robotsPositive.style.display = "none";
+  robotsNegative.style.display = "none";
+  general.style.display = "flex";
+  document.body.style.background = 'url("img/general/dice.jpg")';
+  document.body.style.backgroundPosition = "center";
+})
+
+
+
 // FUTURE EVENTS
 
-let futureEvents = ["halley"]
+let futureEvents = ["halley", "robots"]
 
 let futurePosition;
 
@@ -90,8 +144,7 @@ randomEventBtn.addEventListener('click', () =>{
   randomizeEvent();
   if (futureEvents[futurePosition] == "halley"){
     halley();
+} else if (futureEvents[futurePosition] == "robots"){
+  robots();
 }
 })
-
-
-// HALLEY'S
