@@ -38,7 +38,8 @@ body {
   font-size: 3.5rem;
   text-align: center;
   color: white;
-    font-family: 'Inconsolata', monospace;
+  font-family: 'Inconsolata', monospace;
+  filter: drop-shadow(2px 2px 6px black);  
 }
 
 .randomEventBtn{
