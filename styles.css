@@ -9,9 +9,10 @@ html{
 }
 
 body {
-  background-image: url('img/comet.jpg');
+  background: url('img/general/dice.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .container{
@@ -25,9 +26,46 @@ body {
 
 }
 
+.general{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
 .main-title{
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-align: center;
+  color: white;
+    font-family: 'Inconsolata', monospace;
+}
+
+.randomEventBtn{
+  padding: 1rem 8rem;
+  border-radius: 1rem;
+  font-family: 'Inconsolata', monospace;
+  font-size: 2rem;
+  margin: 3rem auto 0 auto;
+}
+
+.randomEventBtn:hover{
+  cursor: pointer;
+}
+
+.halleyMainTexts{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+}
+
+.halleyH1{
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  font-family: 'Inconsolata', monospace;
 }
 
 .title-p{
@@ -36,35 +74,28 @@ body {
   background: black;
   text-align: center;
   width: 100%;
-}
-
-.main-titles {
-  display: flex;
-  flex-direction: column;
-  min-height: 10vh;
-  justify-content: center;
-  align-items: center;
   font-family: 'Inconsolata', monospace;
   color: white;
-  max-width: 80%;
-  margin: 5rem auto 2rem auto;
 }
 
-.form{
+.halleyform{
   font-family: 'Inconsolata', monospace;
   color: white;
   transform: scale(2.5);
   margin: 3rem auto 2rem auto;
+  display: none;
 }
 
 .how-old {
   margin-top: 1rem;
   font-size: 1.5rem;
   margin: 0.5rem auto 0.5rem auto;
+
 }
 
 #age-input{
   margin: 0 auto 0.5rem auto;
+
 }
 
 .destiny{
@@ -99,7 +130,6 @@ body {
   align-items: center;
   font-family: 'Inconsolata', monospace;
   position: absolute;
-  transform: translateY(180px);
   color: white;
   font-size: 1.5rem;
   display: none;
@@ -113,7 +143,6 @@ body {
   align-items: center;
   font-family: 'Inconsolata', monospace;
   position: absolute;
-  transform: translateY(180px);
   color: white;
   font-size: 1.5rem;
   display: none;
@@ -276,8 +305,8 @@ h2{
   }
 }
 
-@media (max-width: 730px){
+@media (max-width:1000px){
   body{
-    background: url("img/comet-vertical.jpg")
+    background-position: center;
   }
 }
