@@ -140,8 +140,8 @@ const advertisingTryAgain = document.querySelector('.try-again-advertising');
 
 function advertising () {
   advertisingMainTexts.style.display = "flex";
-  document.body.style.background  = "url(img/advertising/advertising-horizontal.jpg)";
-  document.body.style.backgroundPosition = "left";
+  document.body.style.background  = "url(img/advertising/advertising1.jpg)";
+  document.body.style.backgroundPosition = "center";
   advertisingform.style.display = "flex";
 }
 

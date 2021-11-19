@@ -324,6 +324,7 @@ h2{
   text-align: center;
   color: white;
   font-family: 'Inconsolata', monospace;
+  filter: drop-shadow(3px 3px 6px black);
 }
 
 .advertising-p{
