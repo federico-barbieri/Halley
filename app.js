@@ -126,11 +126,61 @@ robotsTryAgain.addEventListener('click', () => {
   document.body.style.backgroundPosition = "center";
 })
 
+// ADVERTISING
+
+const advertisingMainTexts = document.querySelector('.advertisingMainTexts');
+const advertisingH1 = document.querySelector('.advertisingH1');
+const advertisingP = document.querySelector('.advertising-p');
+const advertisingform = document.querySelector('.advertisingform');
+const advertisingUserAnswer = document.querySelector('.userInputAdvertising');
+const advertisingdestinyBtn = document.querySelector('.advertisingdestiny');
+const advertisingPositive = document.querySelector('.positive-message-advertising')
+const advertisingNegative = document.querySelector('.negative-message-advertising')
+const advertisingTryAgain = document.querySelector('.try-again-advertising');
+
+function advertising () {
+  advertisingMainTexts.style.display = "flex";
+  document.body.style.background  = "url(img/advertising/advertising-horizontal.jpg)";
+  document.body.style.backgroundPosition = "left";
+  advertisingform.style.display = "flex";
+}
+
+advertisingdestinyBtn.addEventListener('click', (e) => {
+  event.preventDefault();
+  userAge+= advertisingUserAnswer.value;
+  console.log(userAge);
+  console.log(parseInt(userAge) + parseInt(currentYear));
+
+  if (parseInt(userAge) + parseInt(currentYear) > 2050){
+    advertisingMainTexts.style.display = "none";
+    advertisingform.style.display = "none";
+    advertisingPositive.style.display = "flex";
+    advertisingTryAgain.style.display = "inline";
+    userAge = '';
+    advertisingUserAnswer.value = '';
+  } else {
+    advertisingNegative.style.display = "flex";
+    advertisingTryAgain.style.display = "inline";
+    advertisingMainTexts.style.display = "none";
+    advertisingform.style.display = "none";
+    userAge = '';
+    advertisingUserAnswer.value = '';
+  }
+})
+
+advertisingTryAgain.addEventListener('click', () => {
+  advertisingTryAgain.style.display = "none";
+  advertisingPositive.style.display = "none";
+  advertisingNegative.style.display = "none";
+  general.style.display = "flex";
+  document.body.style.background = 'url("img/general/dice.jpg")';
+  document.body.style.backgroundPosition = "center";
+})
 
 
 // FUTURE EVENTS
 
-let futureEvents = ["halley", "robots"]
+let futureEvents = ["halley", "robots", "advertising"]
 
 let futurePosition;
 
@@ -146,5 +196,7 @@ randomEventBtn.addEventListener('click', () =>{
     halley();
 } else if (futureEvents[futurePosition] == "robots"){
   robots();
+} else if (futureEvents[futurePosition] == "advertising"){
+  advertising();
 }
 })
