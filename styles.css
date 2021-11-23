@@ -403,3 +403,99 @@ h2{
   color: white;
   background-color: black;
 }
+
+/* animals */
+
+
+.animalsMainTexts{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 35vh;
+}
+
+.animalsH1{
+  font-size: 3.5rem;
+  text-align: center;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  filter: drop-shadow(3px 3px 6px black);
+}
+
+.animals-p{
+  font-size: 2rem;
+  margin-top: 2rem;
+  background: black;
+  text-align: center;
+  width: 100%;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+}
+
+.animalsform{
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  transform: scale(2.5);
+  margin: 3rem auto 2rem auto;
+  display: none;
+}
+
+.animalsdestiny{
+  border-radius: 30px;
+  padding: 10px;
+  font-family: 'Inconsolata', monospace;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+}
+
+.animalsdestiny:hover{
+  color: white;
+  background-color: black;
+}
+
+.positive-message-animals{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+  text-align: center;
+  background-color: black;
+}
+
+.negative-message-animals{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  font-size: 1.5rem;
+  display: none;
+  text-align: center;
+  margin: 1rem auto 5rem auto;
+  background-color: black;
+}
+
+.try-again-animals{
+  border-radius: 30px;
+  font-size: 2rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  font-family: 'Inconsolata', monospace;
+  cursor: pointer;
+  display: none;
+  margin: 2rem auto 2rem auto;
+  border: 1px solid white;
+  color: white;
+  background: black;
+}
+
+.try-again-animals:hover{
+  color: white;
+  background-color: black;
+}
