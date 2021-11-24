@@ -97,8 +97,7 @@ function robots () {
 robotsdestinyBtn.addEventListener('click', (e) => {
   event.preventDefault();
   userAge+= robotsUserAnswer.value;
-  console.log(userAge);
-  console.log(parseInt(userAge) + parseInt(currentYear));
+
 
   if (parseInt(userAge) + parseInt(currentYear) > 2038){
     robotsMainTexts.style.display = "none";
@@ -148,8 +147,6 @@ function advertising () {
 advertisingdestinyBtn.addEventListener('click', (e) => {
   event.preventDefault();
   userAge+= advertisingUserAnswer.value;
-  console.log(userAge);
-  console.log(parseInt(userAge) + parseInt(currentYear));
 
   if (parseInt(userAge) + parseInt(currentYear) > 2050){
     advertisingMainTexts.style.display = "none";
@@ -200,7 +197,11 @@ animalsdestinyBtn.addEventListener('click', (e) => {
   event.preventDefault();
   userAge+= animalsUserAnswer.value;
 
-  if (parseInt(userAge) + parseInt(currentYear) > 2055){
+  if (humanLifespan - parseInt(userAge) + parseInt(currentYear) > 2055 ){
+    console.log(humanLifespan - parseInt(userAge) + parseInt(currentYear));
+    console.log(humanLifespan);
+    console.log(parseInt(userAge));
+    console.log(parseInt(currentYear));
     animalsMainTexts.style.display = "none";
     animalsform.style.display = "none";
     animalsPositive.style.display = "flex";
